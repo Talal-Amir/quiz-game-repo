@@ -17,48 +17,48 @@ const progressBar = document.getElementById("progress");
 
 const quizQuestions = [
   {
-    question: "What is the capital of France?",
+    question: "What is your name?",
     answers: [
-      { text: "London", correct: false },
-      { text: "Berlin", correct: false },
-      { text: "Paris", correct: true },
-      { text: "Madrid", correct: false },
+      { text: "Talal", correct: true },
+      { text: "Shan", correct: false },
+      { text: "Talha", correct: false },
+      { text: "Haris", correct: false },
     ],
   },
   {
-    question: "Which planet is known as the Red Planet?",
+    question: "What is your age?",
     answers: [
-      { text: "Venus", correct: false },
-      { text: "Mars", correct: true },
-      { text: "Jupiter", correct: false },
-      { text: "Saturn", correct: false },
+      { text: "18", correct: false },
+      { text: "24", correct: true },
+      { text: "32", correct: false },
+      { text: "12", correct: false },
     ],
   },
   {
-    question: "What is the largest ocean on Earth?",
+    question: "What is the name of your country?",
     answers: [
-      { text: "Atlantic Ocean", correct: false },
-      { text: "Indian Ocean", correct: false },
-      { text: "Arctic Ocean", correct: false },
-      { text: "Pacific Ocean", correct: true },
+      { text: "America", correct: false },
+      { text: "India", correct: false },
+      { text: "Afghanistan", correct: false },
+      { text: "Pakistan", correct: true },
     ],
   },
   {
-    question: "Which of these is NOT a programming language?",
+    question: "What is your language?",
     answers: [
-      { text: "Java", correct: false },
-      { text: "Python", correct: false },
-      { text: "Banana", correct: true },
-      { text: "JavaScript", correct: false },
+      { text: "Hindi", correct: false },
+      { text: "Pashto", correct: false },
+      { text: "Urdu", correct: true },
+      { text: "English", correct: false },
     ],
   },
   {
-    question: "What is the chemical symbol for gold?",
+    question: "What is your gender?",
     answers: [
-      { text: "Go", correct: false },
-      { text: "Gd", correct: false },
-      { text: "Au", correct: true },
-      { text: "Ag", correct: false },
+      { text: "Female", correct: false },
+      { text: "Animal", correct: false },
+      { text: "Male", correct: true },
+      { text: "Ghost", correct: false },
     ],
   },
 ];

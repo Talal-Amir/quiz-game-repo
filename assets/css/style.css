@@ -17,7 +17,7 @@ body {
 .container {
   background-color: rgb(13, 137, 129);
   border-radius: 1rem;
-  box-shadow: rgba(44, 169, 194, 0.19) 0px 10px 20px, rgba(10, 133, 171, 0.23) 0px 6px 6px;
+  box-shadow: rgba(27, 222, 102, 0.543) 0px 10px 20px, rgba(24, 131, 164, 0.533) 0px 6px 6px;
   width: 100%;
   max-width: 600px;
   overflow: hidden;
@@ -114,7 +114,7 @@ body {
 
 .progress {
   height: 100%;
-  background-color: #e86a33;
+  background-color: #28a745;
   width: 0%;
   transition: width 0.3s ease;
 }
@@ -147,7 +147,9 @@ body {
 
 button {
   background-color: #dc357b;
-  color: white;
+  color: #333;
+  font-weight: 600;
+  box-shadow: rgba(240, 50, 246, 0.852) 0px 1px 2px, rgba(212, 55, 202, 0.857) 0px 2px 4px, rgba(218, 58, 202, 0.876) 0px 4px 8px;
   border: none;
   border-radius: 10px;
   padding: 15px 30px;
@@ -158,6 +160,7 @@ button {
 
 button:hover {
   background-color: #da72a4;
+  color: #fff;
 }
 
 /* RESPONSIVE DESIGN */
