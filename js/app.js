@@ -71,12 +71,10 @@ let answersDisabled = false;
 totalQuestionsSpan.textContent = quizQuestions.length;
 maxScoreSpan.textContent = quizQuestions.length;
 
-// event listeners
 startButton.addEventListener("click", startQuiz);
 restartButton.addEventListener("click", restartQuiz);
 
 function startQuiz() {
-  // reset vars
   currentQuestionIndex = 0;
   score = 0;
   scoreSpan.textContent = 0;
@@ -88,7 +86,6 @@ function startQuiz() {
 }
 
 function showQuestion() {
-  // reset state
   answersDisabled = false;
 
   const currentQuestion = quizQuestions[currentQuestionIndex];
@@ -107,7 +104,6 @@ function showQuestion() {
     button.textContent = answer.text;
     button.classList.add("answer-btn");
 
-    // what is dataset? it's a property of the button element that allows you to store custom data
     button.dataset.correct = answer.correct;
 
     button.addEventListener("click", selectAnswer);
@@ -148,7 +144,7 @@ function selectAnswer(event) {
     } else {
       showResults();
     }
-  }, 1000);
+  }, 500);
 }
 
 function showResults() {

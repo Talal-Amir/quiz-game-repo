@@ -5,17 +5,17 @@
 }
 
 body {
-  background: #333;
+  background: #170639;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
   padding: 1rem;
-  font-family: "Poppins", sans-serif;
+  font-family: "Comfortaa", sans-serif;
 }
 
 .container {
-  background-color: rgb(13, 137, 129);
+  background-color: rgb(48, 13, 137);
   border-radius: 1rem;
   box-shadow: rgba(27, 222, 102, 0.543) 0px 10px 20px, rgba(24, 131, 164, 0.533) 0px 6px 6px;
   width: 100%;
@@ -54,7 +54,7 @@ body {
 }
 
 #question-text {
-  color: #333;
+  color: #cdb22a;
   font-size: 2rem;
   font-weight: 600;
   margin-bottom: 1rem;
@@ -80,6 +80,7 @@ body {
   background-color: #f8f0e5;
   color: #333;
   border: 2px solid #eadbc8;
+   font-family: "Comfortaa", sans-serif;
   border-radius: 10px;
   padding: 1rem;
   cursor: pointer;
@@ -90,6 +91,7 @@ body {
 .answer-btn:hover {
   background-color: #eadbc8;
   border-color: #dac0ae;
+  color: #dc3545;
 }
 
 .answer-btn.correct {
@@ -124,6 +126,7 @@ body {
 #result-screen h1 {
   color: #a3f0c4;
   margin-bottom: 30px;
+   font-family: "Comfortaa", sans-serif;
 }
 
 .result-info {
@@ -141,6 +144,7 @@ body {
 
 #result-message {
   font-size: 1.5rem;
+   font-family: "Comfortaa", sans-serif;
   font-weight: 600;
   color: #28a745;
 }
@@ -149,6 +153,7 @@ button {
   background-color: #dc357b;
   color: #333;
   font-weight: 600;
+   font-family: "Comfortaa", sans-serif;
   box-shadow: rgba(240, 50, 246, 0.852) 0px 1px 2px, rgba(212, 55, 202, 0.857) 0px 2px 4px, rgba(218, 58, 202, 0.876) 0px 4px 8px;
   border: none;
   border-radius: 10px;
