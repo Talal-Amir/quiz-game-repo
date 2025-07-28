@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Color Palette Generator</title>
+  <style>
+    body {
+      font-family: Arial;
+      text-align: center;
+      padding: 20px;
+    }
+    .container {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+    .color-box {
+      width: 120px;
+      height: 120px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #ccc;
+      color: white;
+      font-weight: bold;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      padding: 10px;
+    }
+    .color-code {
+      margin-top: 10px;
+      font-size: 14px;
+    }
+    .copy-btn {
+      margin-top: 5px;
+      background: white;
+      color: black;
+      border: none;
+      padding: 5px 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 13px;
+    }
+    .copy-btn:hover {
+      background: #ddd;
+    }
+    button#generate {
+      padding: 10px 20px;
+      font-size: 16px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<h2>🎨 Random Color Palette Generator</h2>
+<button id="generate" onclick="generateColors()">Generate Colors</button>
+
+<div class="container" id="palette"></div>
+
+<script>
+  function getRandomColor() {
+    let r = Math.floor(Math.random() * 256);
+    let g = Math.floor(Math.random() * 256);
+    let b = Math.floor(Math.random() * 256);
+    let hex = "#" + r.toString(16).padStart(2, '0') +
+                    g.toString(16).padStart(2, '0') +
+                    b.toString(16).padStart(2, '0');
+    return hex;
+  }
+
+  function copyColorCode(color) {
+    navigator.clipboard.writeText(color).then(() => {
+      alert("Copied: " + color);
+    });
+  }
+
+  function generateColors() {
+    const palette = document.getElementById("palette");
+    palette.innerHTML = "";
+
+    for (let i = 0; i < 4; i++) {
+      let color = getRandomColor();
+      let box = document.createElement("div");
+      box.className = "color-box";
+      box.style.backgroundColor = color;
+
+      let code = document.createElement("div");
+      code.className = "color-code";
+      code.textContent = color;
+
+      let copyBtn = document.createElement("button");
+      copyBtn.className = "copy-btn";
+      copyBtn.textContent = "Copy";
+      copyBtn.onclick = () => copyColorCode(color);
+
+      box.appendChild(code);
+      box.appendChild(copyBtn);
+      palette.appendChild(box);
+    }
+  }
+
+  // Auto generate once when page loads
+  generateColors();
+</script>
+
+</body>
+</html>
